@@ -1,8 +1,13 @@
 n=int(input())
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        print(chr(i+64),end=" ")
-    print(end="
-")
-
+c=[]
+for i in range(n):
+    c.append("x")
+g=c
+for j in range(n):
+    d=list(g)
+    d.remove(d[j])
+    d.insert(j,"0")
+    print("".join(d))
+    
+    
     
